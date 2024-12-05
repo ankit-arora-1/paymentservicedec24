@@ -10,11 +10,11 @@ public class PaymentService {
         this.paymentGatewaySelector = paymentGatewaySelector;
     }
 
-    public void generatePaymentLink() {
+    public String generatePaymentLink() {
         // Logic to update the DB when the payment starts
 
-//        return paymentGatewaySelector
-//                .getPaymentGateway()
-//                .generatePaymentLink();
+        return paymentGatewaySelector
+                .getPaymentGateway()
+                .generatePaymentLink();
     }
 }
